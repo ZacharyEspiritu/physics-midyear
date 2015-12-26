@@ -20,16 +20,24 @@
         width:228px;
     }
 }
-
 #sidebar li.active {
     border:0 #eee solid;
     border-right-width:5px;
 }
-
 #sidebar li {
     margin-left: -15px;
 }
-
 #sidebar ul.nested a {
     color: #475f71;
+}
+
+.panel .panel-heading {
+    padding-top: 7px;
+    padding-bottom: 8px;
+}
+.panel .panel-heading h3 {
+    font-size: 15px;
+}
+.panel .panel-body {
+    padding-bottom: 7px;
 }

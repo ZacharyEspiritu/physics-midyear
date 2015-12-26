@@ -70,7 +70,6 @@
                         </li>
                         <li><a href="#chapter3">Chapter 3: Kinematics in Two Dimensions</a>
                             <ul class="nested">
-                                <li><a href="#vectorsVsScalars">Vectors vs Scalars</a></li>
                                 <li><a href="#vectorMath">Math with Vectors</a></li>
                                 <li><a href="#projectileMotion">Projectile Motion</a></li>
                                 <li><a href="#relativeVelocity">Relative Velocity</a></li>
@@ -158,10 +157,15 @@
 
                     <h2 id="chapter2">Chapter 2: Kinematics in One Dimension</h2>
                     <blockquote>
-                        <p>Insert some vague Physics joke about Kinematics.</p>
-                        <footer>From WWF's website</footer>
+                        <p>In this system of just me and you, where I've defined negative to refer to the downwards direction, my acceleration is currently &ndash;9.8 m/s for you.</p>
+                        <footer>A Valentine's Day card</footer>
                     </blockquote>
                     <p>Chapter 2 contains material covering kinematics material in a single dimension. You'll be working on number lines for the majority of this chapter.</p>
+                    <p>I'm assuming by this point you all know the standard kinematics equations for constant acceleration:</p>
+                    <div>$$v = v_0 + at$$</div>
+                    <div>$$x = x_0 + {v_0}t + {1 \over 2}at^2$$</div>
+                    <div>$$v^2 = v_0^2 + 2a{\Delta x}$$</div>
+                    <p>You'll be using these a lot.</p>
 
                     <h3 id="referenceFrames">Reference Frames</h3>
                     <img src="img/referenceFrames.png" class="img-responsive pull-right">
@@ -175,8 +179,13 @@
 
                     <h3 id="displacement">Displacement</h3>
                     <p>Displacement is defined as <b>the change in position of an object</b>. In other words, how far the object is from the starting point.</p>
-                    <p>A good example of displacement: a person walks 70m west and 30m east. While their total distance travelled is 100m, their displacement is 40m to the west.</p>
                     <p>Displacement is a <b>vector quantity</b>, so make sure to include both magnitude and direction in your answer.</p>
+                    <div class="panel panel-info">
+                        <div class="panel-heading"><h3 class="panel-title">Example problem:</h3></div>
+                        <div class="panel-body">
+                            <p>A person walks 70 meters west and 30 meters east. What is their displacement?</p>
+                        </div>
+                    </div>
 
                     <h3 id="speedVsVelocity">Speed vs Velocity</h3>
                     <p>Speed is the measure of how fast an object is moving. The <b>average speed</b> of an object is defined as:</p>
@@ -209,30 +218,76 @@
                     <div class="panel panel-info">
                         <div class="panel-heading"><h3 class="panel-title">Example problem:</h3></div>
                         <div class="panel-body">
-                            <p>A ball is thrown downward with an inital velocity of 3.00 m/s from a tower 70.0 meters high. Starting from the moment when the ball leaves the thrower's hand, how much time will have elapsed before the ball hits the ground?</p>
+                            <p>A ball is thrown <em>downward</em> with an inital velocity of 3.00 m/s from a tower 70.0 meters high. Starting from the moment when the ball leaves the thrower's hand, how much time will have elapsed before the ball hits the ground?</p>
+                        </div>
+                    </div>
+                    <div class="panel panel-info">
+                        <div class="panel-heading"><h3 class="panel-title">Example problem:</h3></div>
+                        <div class="panel-body">
+                            <p>A ball is thrown <em>upward</em> into the air with an initial velocity of 15.0 m/s. Determine the following:</p>
+                            <ol type="a">
+                                <li>How high does the ball go?</li>
+                                <li>How long is the ball in flight before it comes back to the thrower's hand?</li>
+                                <li>What is the velocity of the ball the moment before it is caught by the thrower?</li>
+                                <li>At what time \(t\) does the ball pass a point 8.00m above the person's hand?</li>
+                            </ol>
                         </div>
                     </div>
 
                     <h3 id="graphicalAnalysis">Graphical Analysis</h3>
-                    <p>There's two main aspects to graphical analysis: determining the shape of a graph based on other graphs and determining the scalar quantity of certain measurements based on the area under a graph. We'll focus on both of them here.</p>
+                    <p>It's hard to draw graphs for this online, so you may wish to refer back to Lab 1 and Lab 2 for some good graphical drawing questions. Other than that, there's a few important points to note here:</p>
+                    <ul>
+                        <li>The slope at a specific time on a position graph is equal to the value at the specific time on the velocity graph</li>
+                        <li>The slope at a specific time on a velocity graph is equal to the value at the specific time on the acceleration graph</li>
+                        <li>The area under the velocity graph is equal to the displacement</li>
+                    </ul>
+                    <div class="panel panel-info">
+                        <div class="panel-heading"><h3 class="panel-title">Example problem:</h3></div>
+                        <div class="panel-body">
+                            <p>A space probe accelerates uniformly from 50 m/s at \(t = 0\) to 150 m/s at \(t = 10\ \mathrm{s}\). How far did it move between \(t = 2.0\ \mathrm{s}\) and \(t = 6.0\ \mathrm{s}\)?</p>
+                        </div>
+                    </div>
 
                     <hr>
 
                     <h2 id="chapter3">Chapter 3: Kinematics in Two Dimensions</h2>
                     <blockquote>
                         <p>Insert some vague Physics joke about Kinematics.</p>
-                        <footer>From WWF's website</footer>
+                        <footer>Source</footer>
                     </blockquote>
-                    <p>Chapter 2 contains material covering kinematics material in a single dimension. You'll be working on number lines for the majority of this chapter.</p>
-
-                    <h3 id="vectorsVsScalars">Vectors vs Scalars</h3>
-                    <p>Test</p>
+                    <p>Chapter 3, quite unsuprisingly, is all about kinematics in two dimensions. Vectors become increasingly important here, as we'll see in a moment.</p>
 
                     <h3 id="vectorMath">Math with Vectors</h3>
-                    <p>Test</p>
+                    <img src="img/vectorMath.png" class="img-responsive pull-right">
+                    <p>Remember that vectors have both <em>magnitude</em> and <em>direction</em>. As such, math with vectors needs to be handled in a special way.</p>
+                    <p>We can add two vectors together by separating them into their <b>horizontal and vertical components</b> and adding those together separately. Afterwards, we can use the Pythagorean Theorem to determine the magnitude of the resultant vector and trignometry to determine the angular direction.</p>
+                    <p>Similarly, we can subtract vectors in the same way.</p>
+                    <p>We can also muliply a vector by a scalar. The direction will remain the same but the magnitude will equal the magnitude of the inital vector multiplied by the scalar. Make sure to remember to include direction in your answer.</p>
+                    <div class="panel panel-info">
+                        <div class="panel-heading"><h3 class="panel-title">Example problem:</h3></div>
+                        <div class="panel-body">
+                            <p>An airplane trip involves three legs, with two stopovers for refueling. The first leg is due east for 620 km; the second leg is 45&deg; south of east for 440 km; and the third leg is 50&deg; south of west for 550 km. What is the plane's total displacement?</p>
+                        </div>
+                    </div>
+
 
                     <h3 id="projectileMotion">Projectile Motion</h3>
-                    <p>Test</p>
+                    <p>The projectile motion of an object can be understood by <em>analyzing the horizontal and vertical components of an object separately.</em></p>
+                    <div class="panel panel-success">
+                        <div class="panel-heading"><h3 class="panel-title">Solving example:</h3></div>
+                        <div class="panel-body">
+                            <p><em>A movie stunt driver on a motorcycle speeds horizontally. off a 50.0 meter cliff. How fast must the motorcycle leave the cliff to land 90.0 meters from the base of the cliff?</em></p>
+                            <hr>
+                            <p>We'll choose the \(y\) direction as positive upward, with the top of the cliff as \(y_0 = 0\). The \(x\) direction is horizontal with \(x_0 = 0\) at the point where the motorcycle leaves the cliff.</p>
+                            <p>We know that the vertical acceleration of the motorcycle is \(a_y = -g = -9.8\) and that the horizontal acceleration of the motorcycle is \(a_x = 0\). We also know that \(y_0 = 0\) and \(y = -50.0\ \mathrm{m}\), and that \(x_0 = 0\) and \(x = 90.0\ \mathrm{m}\). Finally, we know that the initial vertical velocity is \(v_{y0} = 0\).</p>
+                            <p>We can now start solving for \(v_{x0}\) and \(t\):</p>
+                            <div>\begin{align} y & = y_0 + v_{y0}t + {1 \over 2}a_yt^2 \\ & = 0 + 0 + {1 \over 2}(-g)t^2 \\ & = {1 \over 2}(-g)t^2 \end{align}</div>
+                            <p>We can then solve for \(t\) and set \(y = 50.0\ \mathrm{m}\).</p>
+                            <div>$$t = \sqrt{2y \over -g} = \sqrt{2(-50.0\ \mathrm{m}) \over -9.80\ \mathrm{m/s^2}} \approx 3.19\ \mathrm{s}$$</div>
+                            <p>Now, we can calculate for the initial velocity, \(v_{x0}\).</p>
+                            <div>\begin{align} x & = x_0 + v_{x0}t + {1 \over 2}a_xt^2 \\ & = 0 + v_{x0}t + 0 \\ & = v_{x0}t \\ v_{x0} & = {x \over t} = {90.0\ \mathrm{m} \over 3.19\ \mathrm{s}} \approx 28.2\ \mathrm{m/s} \end{align}</div>
+                        </div>
+                    </div>
 
                     <h3 id="relativeVelocity">Relative Velocity</h3>
                     <p>Test</p>

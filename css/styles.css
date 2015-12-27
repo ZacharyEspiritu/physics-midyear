@@ -41,3 +41,9 @@
 .panel .panel-body {
     padding-bottom: 7px;
 }
+.panel .panel-body .problem {
+    font-style: italic;
+}
+.panel .panel-body .problem em {
+    font-style: normal;
+}

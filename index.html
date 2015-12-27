@@ -28,8 +28,8 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
         <!--[if lt IE 9]>
-<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
 
         <!-- Custom style sheet -->
         <link href="css/styles.css" rel="stylesheet">
@@ -321,7 +321,7 @@
                     </blockquote>
                     <p>Cat physics jokes aside, Chapter 4 is all about the relationship between force and motion.</p>
 
-                    <p>As we all should know by now, a <b>force</b> is any type of push or pull on a object. The important (and slightly unintunitive) thing to remember about forces is that <em>an object will continue to remain at rest</em> or <em>move at constant speed if no force is being applied to it</em>. In other words, an object only will slow down or speed up if a force is applied on it.</p>
+                    <p>As we all should know by now, a <b>force</b> is any type of push or pull on a object. They are vector quantities, so they have both magnitude and direction. The important (and slightly unintunitive) thing to remember about forces is that <em>an object will continue to remain at rest</em> or <em>move at constant speed if no force is being applied to it</em>. In other words, an object only will slow down or speed up if a force is applied on it.</p>
 
                     <h3 id="newtonsLaws">Newton's Laws of Motion</h3>
                     <p>Newton's three laws of motion describe the behavior of objects when forces are applied to them.</p>
@@ -330,11 +330,27 @@
                     <p>As we all should know by now, a <b>force</b> is any type of push or pull on a object. Newton's first law of motion describes an important (and slightly unintunitive) thing to remember about forces is that <em>an object will continue to remain at rest</em> or <em>move at constant speed if no force is being applied to it</em>. In other words, an object only will slow down or speed up if a force is applied on it.</p>
                     <p>This tendency of an object to maintain its state of rest or uniform motion is called <b>inertia</b>.</p>
                     <h4>Second Law of Motion</h4>
-                    <blockquote>The acceleration of an object is directly proportinonal to the net force acting on it, and is inversely proportional to its mass. The idrection of the acceleration is in the direction of the net force action on the object.</blockquote>
-                    <p></p>
+                    <blockquote>The acceleration of an object is directly proportional to the net force acting on it, and is inversely proportional to its mass. The direction of the acceleration is in the direction of the net force action on the object.</blockquote>
+                    <p>Newton's second law of motion is best known in its equation form:</p>
+                    <div class="equation-block">$$\sum\vec{F} = m\vec{a}$$</div>
+                    <p>Remember before solving to convert your mass units to <b>kilograms</b> to stay in line with SI units.</p>
+                    <div class="panel panel-success">
+                        <div class="panel-heading"><h3 class="panel-title">Solving example:</h3></div>
+                        <div class="panel-body">
+                            <p>What average net force is required to bring a 1500-kg car to rest from a speed of 28 m/s within a distance of 55 meters?</p>
+                            <hr>
+                            <p>We'll define the car's motion as along the positive x-axis. We know that that the initial velocity \(v_0 = 28\ \mathrm{m/s}\), the final velocity \(v = 0\), and the distance \(\Delta{x} = 55\ \mathrm{m}\).</p>
+                            <p>In order to determine the force, we still need to find \(a\), so let's set up a kinematic equation:</p>
+                            <div class="equation-block">\begin{align} v^2 & = v_0^2 + 2a\Delta{x} \\ a & = {v^2 - v_0^2 \over 2\Delta{x}} = {0 - (28\ \mathrm{m/s})^2 \over 2(55\ \mathrm{m})} \approx -7.1\ \mathrm{m/s^2} \end{align}</div>
+                            <p>Now, we can plug our values into \(F = ma\) and solve for \(F\):</p>
+                            <div class="equation-block">$$F = ma = (1500\ \mathrm{kg})(-7.1\ \mathrm{m/s^2}) \approx -1.1 \times 10^4\ \mathrm{N}$$</div>
+                            <p>The force required to stop the car is \(-1.1 \times 10^4\ \mathrm{N}\). Note that the force must be exerted in the direction opposite to the initial velocity, which the negative symbol signifies.</p>
+                        </div>
+                    </div>
                     <h4>Third Law of Motion</h4>
-                    <blockquote></blockquote>
-                    
+                    <blockquote>Whenever one object exerts a force on a second object, the second exerts an equal force in the opposite direction on the first.</blockquote>
+                    <p>Newton's third law of motion is more commonly known as "to every action there is an equal and opposite reaction". Note that the "action" force adn the "reaction" force are acting on <b>different objects.</b></p>
+                    <p>A good example of Newton's third law in action are cars. The tires of a moving car push backward against the ground because of friction, and the ground pushes on the tires in the opposite direction, accelerating the car forward.</p>
 
                     <h3 id="massVsWeight">Mass vs Weight</h3>
                     <p><b>Mass</b> is best defined as the <em>measure of the inertia</em> of an object. The more mass an object has, the greater the force needed to give it a particular acceleration.</p>

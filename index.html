@@ -86,7 +86,6 @@
                         <li><a href="#chapter5">Chapter 5: Gravitation</a>
                             <ul class="nested">
                                 <li><a href="#uniformCircularMotion">Uniform Circular Motion</a></li>
-                                <li><a href="#nonuniformCircularMotion">Nonuniform Circular Motion</a></li>
                                 <li><a href="#universalGravitation">Universal Gravitation</a></li>
                             </ul>
                         </li>
@@ -94,6 +93,7 @@
                             <ul class="nested">
                                 <li><a href="#work">Work</a></li>
                                 <li><a href="#kineticVsPotential">Kinetic vs Potential Energy</a></li>
+                                <li><a href="#springs">Springs</a></li>
                                 <li><a href="#energyConservation">Conservation of Energy</a></li>
                                 <li><a href="#mechanicalEnergy">Mechanical Energy</a></li>
                             </ul>
@@ -321,7 +321,6 @@
                         <footer><a href="http://www.buzzfeed.com/kellyoakes/17-jokes-only-physics-geeks-will-understand#.pfpjEKQwp0">BuzzFeed</a></footer>
                     </blockquote>
                     <p>Cat physics jokes aside, Chapter 4 is all about the relationship between force and motion.</p>
-
                     <p>As we all should know by now, a <b>force</b> is any type of push or pull on a object. They are vector quantities, so they have both magnitude and direction. The important (and slightly unintunitive) thing to remember about forces is that <em>an object will continue to remain at rest</em> or <em>move at constant speed if no force is being applied to it</em>. In other words, an object only will slow down or speed up if a force is applied on it.</p>
 
                     <h3 id="newtonsLaws">Newton's Laws of Motion</h3>
@@ -338,7 +337,7 @@
                     <div class="panel panel-success">
                         <div class="panel-heading"><h3 class="panel-title">Solving example:</h3></div>
                         <div class="panel-body">
-                            <p>What average net force is required to bring a 1500-kg car to rest from a speed of 28 m/s within a distance of 55 meters?</p>
+                            <p class="problem">What average net force is required to bring a 1500-kg car to rest from a speed of 28 m/s within a distance of 55 meters?</p>
                             <hr>
                             <p>We'll define the car's motion as along the positive x-axis. We know that that the initial velocity \(v_0 = 28\ \mathrm{m/s}\), the final velocity \(v = 0\), and the distance \(\Delta{x} = 55\ \mathrm{m}\).</p>
                             <p>In order to determine the force, we still need to find \(a\), so let's set up a kinematic equation:</p>
@@ -394,7 +393,9 @@
                     <h3 id="friction">Friction</h3>
                     <p>There are two types of friction: <b>kinetic friction</b> and <b>static friction</b>.</p>
                     <h4>Kinetic Friction</h4>
-                    <p>Kinetic friction occurs when two objects slide against one another. It is proportional to the normal force exerted by the object:</p>
+                    <p>
+                        Kinetic friction occurs when two objects slide against one another. It is proportional to the normal force exerted by the object:
+                    </p>
                     <div class="equation-block">$$F_{f} = {\mu}_k F_N$$</div>
                     <p>Here, \(\mathbf{{\mu}_k}\) refers to the <em>coefficient of kinetic friction</em>, which can only be determined experimentally. As a result, many of the problems you will encounter will either provide the value of \(\mu\) for you or have you solve directly for \(\mu\).</p>
                     <h4>Static Friction</h4>
@@ -419,7 +420,7 @@
                         <div class="panel-heading"><h3 class="panel-title">Solving example:</h3></div>
                         <div class="panel-body">
                             <img src="img/pulleyProblem1.png" class="img-responsive pull-left" style="max-width: 200px;">
-                            <p>Two boxes, \(A\) (5.0 kilograms) and \(B\) (2.0 kilograms), shown in the figure here, are connected by a cord running over a pulley. Box \(A\) is placed on a flat, level table and box \(B\) is left hanging off the side of the table. The coefficient of kinetic friction between box \(A\) and the table is \(0.20\). Ignoring the mass of the cord and the pulley and any friction in the pulley, what is the acceleration \(a\) of the system?</p>
+                            <p class="problem">Two boxes, \(A\) (5.0 kilograms) and \(B\) (2.0 kilograms), shown in the figure here, are connected by a cord running over a pulley. Box \(A\) is placed on a flat, level table and box \(B\) is left hanging off the side of the table. The coefficient of kinetic friction between box \(A\) and the table is \(0.20\). Ignoring the mass of the cord and the pulley and any friction in the pulley, what is the acceleration \(a\) of the system?</p>
                             <hr>
                             <img src="img/pulleyProblem1FreebodyDiagrams.png" class="img-responsive pull-right" style="max-width: 200px;">
                             <p>To solve this problem, we'll draw a free-body diagram for each of the boxes, as shown in the  second figure. We also know that the horizontal accleration of box \(A\) must be equal to the vertical accleration of box \(B\). More on that later.</p>
@@ -451,34 +452,135 @@
                     <hr>
 
                     <h2 id="chapter5">Chapter 5: Gravitation</h2>
-                    <blockquote>
-                        <p>Two kittens are on a roof. Which one falls off first?<br>The one with the lowest mew.</p>
-                        <footer>Physics Joke</footer>
-                    </blockquote>
-                    <p>Chapter 5 intro.</p>
+                    <p>Chapter 5 is all about circular motion and gravitation, and then doing the terrible thing of combining both of them into satellite problems to make people sad.</p>
 
                     <h3 id="uniformCircularMotion">Uniform Circular Motion</h3>
-                    <p>Test</p>
-
-                    <h3 id="nonuniformCircularMotion">Nonuniform Circular Motion</h3>
-                    <p>Test</p>
+                    <h4>The Basics</h4>
+                    <img src="img/uniformCircularMotion.png" class="img-responsive pull-right" style="max-width: 200px;">
+                    <p>An object that moves in a circle at constant speed \(v\) is said to experience <b>uniform circular motion</b>. The <em>magnitude</em> of the velocity remains constant throughout the object's motion, but the <em>direction</em> of the velocity is constantly changing.</p>
+                    <p>Because acceleration is defined as a change of velocity, an object undergoing uniform circular motion is <em>constantly changing velocity</em>.</p>
+                    <p>We can calculate the <b>acceleration</b> of an object undergoing uniform circular motion as follows:</p>
+                    <div class="equation-block">$$a_{\mathrm{R}} = {v^2 \over r}$$</div>
+                    <p>The accleration vector always points towards the center of the circle.</p>
+                    <p>We can also create an equation to determine the <b>velocity</b> of an object undergoing uniform circular motion:</p>
+                    <div class="equation-block">$$v = {2\pi r \over T}$$</div>
+                    <div class="panel panel-info">
+                        <div class="panel-heading"><h3 class="panel-title">Example problem:</h3></div>
+                        <div class="panel-body">
+                            <p>Assume the Moon has a uniform circular orbit around the Earth of radius 384,000 kilometers with a period \(T\) of 27.3 days. Determine the acceleration of the Moon toward the Earth.</p>
+                        </div>
+                    </div>
+                    <h4>Problems Including Force</h4>
+                    <p>You may encounter problems that deal with force and uniform circular motion together. For example, an object moving in a circle, such as a ball on the end of a string, must have a force applied to it to keep it moving in that circle. The magnitude of this force can be calculated using Newton's second law and the uniform circular motion accleration above:</p>
+                    <div class="equation-block">$$\sum{F_\mathrm{R}} = ma_\mathrm{R} = m{v^2 \over r}$$</div>
+                    <div class="panel panel-info">
+                        <div class="panel-heading"><h3 class="panel-title">Example problem:</h3></div>
+                        <div class="panel-body">
+                            <p>Calculate the force a person must exert on a string attached to a 0.150 kilogram ball to make the ball revolve in a horizontal circule of radius 0.600 meters. The ball makes 2.00 revolutions per second.</p>
+                        </div>
+                    </div>
+                    <div class="panel panel-info">
+                        <div class="panel-heading"><h3 class="panel-title">Example problem:</h3></div>
+                        <div class="panel-body">
+                            <p>A 0.150 kilogram ball on the end of a 1.10-meter-long cord is swing in a <em>vertical</em> circle. Determine the following:</p>
+                            <ol type="a">
+                                <li>The minimum speed the ball must have at the top of its arc so it continues moving in a circle</li>
+                                <li>The tension in the cord at the bottom of the arc, assuming the ball is moving at twice the speed of Part A</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <h4>Banked and Unbanked Curve Problems</h4>
+                    <p>When an automobile rounds a curve, it undergoes circular motion. In order to turn, the force of friction pushes on the tires of the car which allows the car to move in the direction of the curve.</p>
+                    <p>If the wheels and tires of the car are rolling normally without slipping or sliding, the bottom of the tire is always "at rest" against the road, so the friction force involved is <b>static friction</b>. However, if the static friction force is not great enough, the car will skid out of the circular path.</p>
+                    <div class="panel panel-info">
+                        <div class="panel-heading"><h3 class="panel-title">Example problem:</h3></div>
+                        <div class="panel-body">
+                            <p>A 1000 kilogram car rounds a curve on a flat road of radius 50 meters at a speed of 50 km/h. Determine if the car will skid or not under the following conditions:</p>
+                            <ol type="a">
+                                <li>The pavement is dry and the coefficient of static friction is \(\mu_s = 0.60\)</li>
+                                <li>The pavement is icy and the coefficient of static friction is \(\mu_s = 0.25\)</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <p>The banking of curves can reduce the chance of skidding.</p>
+                    <div class="panel panel-info">
+                        <div class="panel-heading"><h3 class="panel-title">Example problem:</h3></div>
+                        <div class="panel-body">
+                            <img src="img/bankedCurveProblem.png" class="img-responsive pull-right" style="max-width: 200px;">
+                            <p>For a car travelling with speed \(v\) around a curve of radius \(r\), determine a formula for the angle at which a road should be banked so that no friction is required to keep the car in its circular motion. Refer to the free-body diagram attached.</p>
+                            <p>What is this angle for an expressway off-ramp curve of radius 50 meters at a speed of 50 km/h?</p>
+                        </div>
+                    </div>
 
                     <h3 id="universalGravitation">Universal Gravitation</h3>
-                    <p>Test</p>
+                    <h4>The Basics</h4>
+                    <p>Newton's Law of Universal Gravitation states that, essentially, everything attracts everything else. The magnitude of the gravitational force between two objects of masses \(m_1\) and \(m_2\) can be written as:</p>
+                    <div class="equation-block">$$F = G{m_1m_2 \over r^2}$$</div>
+                    <p>\(G\) refers to the universal gravitation constant:</p>
+                    <div class="equation-block">$$G = 6.67 \times 10^{-11}\ \mathrm{N \cdot m^2/kg^2}$$</div>
+                    <div class="panel panel-info">
+                        <div class="panel-heading"><h3 class="panel-title">Example problem:</h3></div>
+                        <div class="panel-body">
+                            <img src="img/universalGravitationProblem1.jpg" class="img-responsive pull-right" style="max-height: 180px;">
+                            <p>Find the net force on the Moon (\(m_M = 7.35 \times 10^{22}\ \mathrm{kg}\)) due to the gravitational attraction of both the Earth (\(m_E = 5.98 \times 10^{24}\ \mathrm{kg}\)) and the Sun (\(m_S = 1.99 \times 10^{30}\ \mathrm{kg}\)), assuming they are at right angles to each other.</p>
+                        </div>
+                    </div>
+                    <h4>Satellites</h4>
+                    <p>Artifical satellies ciriculing the Earth are put into orbit by accelerating them to a sufficiently high tangential speed. If the speed is too high, they will escape orbit and fly off into space. If the speed is too low, they will fall back to Earth.</p>
+                    <p>Note that satellites are <b>in constant freefall</b> to the Earth, which is why we can use the concepts of uniform circular motion and universal gravitation together to describe their motion.</p>
+                    <div class="panel panel-info">
+                        <div class="panel-heading"><h3 class="panel-title">Example problem:</h3></div>
+                        <div class="panel-body">
+                            <p>A <em>geosynchronous</em> satellite is one that has a period of one day. Knowing that the mass of the Earth is \(m_E = 5.98 \times 10^{24}\ \mathrm{kg}\), determine the following:</p>
+                            <ol type="a">
+                                <li>The height above the Earth's surface such a satellite must orbit</li>
+                                <li>The necessary speed of the satellite to stay in orbit</li>
+                            </ol>
+                        </div>
+                    </div>
                     <hr>
 
                     <h2 id="chapter6">Chapter 6: Work &amp; Energy</h2>
-                    <blockquote>
-                        <p>Two kittens are on a roof. Which one falls off first?<br>The one with the lowest mew.</p>
-                        <footer>Physics Joke</footer>
-                    </blockquote>
-                    <p>Chapter 6 intro.</p>
+                    <p>Chapter 6 explores the concepts of work and energy, which further describe forces. They are <b>scalar quantities</b>, which makes them, quite thankfully, easier to work with than vectors.</p>
 
                     <h3 id="work">Work</h3>
-                    <p>Test</p>
+                    <p>The <b>work</b> done on an object by a <b>constant force</b> can be defined via the following equation:</p>
+                    <div class="equation-block">$$W = Fd\cos{\theta}$$</div>
+                    <p>where \(F\) is the magnitude of the constant force, \(d\) is the magnitude of the displacement of the object, and \(\theta\) is the angle between the directions of the force and the displacement. In simpler terms, \(F\cos{\theta}\) refers to the magnitude of the force parallel to \(d\).</p>
+                    <p>Work is measured in <b>joules</b> (J).</p>
+                    <p>Remember that a force can be exerted on an object yet do no work <em>if there is no displacement</em>.</p>
+                    <div class="panel panel-info">
+                        <div class="panel-heading"><h3 class="panel-title">Example problem:</h3></div>
+                        <div class="panel-body">
+                            <p>A person pulls a 50 kilogram create 40 meters along a horizontal floor by a constant force \(F_\mathrm{P} = 100\ \mathrm{N}\), which acts at a 37&deg; angle above the horizontal. The floor exerts a friction force on the box of \(F_\mathrm{fr} = 50\ \mathrm{N}\). Determine the following:</p>
+                            <ol type="a">
+                                <li>The work done by each force acting on the crate</li>
+                                <li>The net work done on the crate</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <p>A potential question may be determining the work done by a <b>varying force as described by a graph</b>. The area under the curve is equal to the work done.</p>
 
                     <h3 id="kineticVsPotential">Kinetic vs Potential Energy</h3>
-                    <p>Test</p>
+                    <h4>Kinetic Energy</h4>
+                    <p><b>Kinetic energy</b> is the energy associated with an object in motion. It can be calculated via the following equation:</p>
+                    <div class="equation-block">$$\mathrm{KE} = {1 \over 2}mv^2$$</div>
+                    <p>The work done by a force is equal to the change in kinetic energy:</p>
+                    <div class="equation-block">\begin{align} W_\mathrm{net} & = \mathrm{KE}_2 - \mathrm{KE}_1 \\ W_\mathrm{net} & = {1 \over 2}mv_2^2 - {1 \over 2}mv_1^2 \end{align}</div>
+                    <div class="panel panel-info">
+                        <div class="panel-heading"><h3 class="panel-title">Example problem:</h3></div>
+                        <div class="panel-body">
+                            <p>How much net work is required to accelerate a 1000 kilogram car from 20 m/s to 30 m/s?</p>
+                        </div>
+                    </div>
+                    <h4>Potential Energy</h4>
+                    <p><b>Potential energy</b> is the energy associated with forces that depend on the position of an object relative to its surroundings. For the purposes of this test, you need to be familiar with two types of potential energy: gravitational potential energy, discussed below, and elastic potential energy, which will be discussed in the Springs section.</p>
+                    <p><b>Gravitational potential energy</b> can be calculated with the following equation:</p>
+                    <div class="equation-block">$$\mathrm{PE}_\mathrm{grav} = mgh$$</div>
+                    <h3 id="springs">Springs</h3>
+                    <p><b>Elastic potential energy</b> is found in compressed springs. It can be calculated with the following equation:</p>
+                    <div class="equation-block">$$\mathrm{elastic\ PE} = {1 \over 2}kx^2$$</div>
+                    <p></p>
 
                     <h3 id="energyConservation">Conservation of Energy</h3>
                     <p>Test</p>

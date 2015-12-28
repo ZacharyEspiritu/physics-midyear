@@ -293,13 +293,13 @@
                         <div class="panel-heading"><h3 class="panel-title">Example problem:</h3></div>
                         <div class="panel-body">
                             <p>A football is kicked at an angle \({\theta}_0 = 37.0°\) with a velocity of 20.0 m/s. Determine the following:</p>
-                            <ul>
+                            <ol type="a">
                                 <li>The maximum height of the football</li>
                                 <li>The time of travel before the football hits the ground</li>
                                 <li>How far away it hits the ground</li>
                                 <li>The velocity at the maximum height</li>
                                 <li>The acceleration at the maximum height</li>
-                            </ul>
+                            </ol>
                         </div>
                     </div>
 
@@ -373,10 +373,10 @@
                         <div class="panel-heading"><h3 class="panel-title">Example problem:</h3></div>
                         <div class="panel-body">
                             <p>A deer box weighing 10.0 kilograms is placed on a flat, frictionless surface. A cord is attached to the box, and Ankeith pulls the cord, moving the box across the table. The magnitude of the force exerted by the pull is \(F_P = 40.0\ \mathrm{N}\), and it is exerted at a 30.0&deg; angle as shown. Determine the following:</p>
-                            <ul>
+                            <ol type="a">
                                 <li>The acceleration of the box</li>
                                 <li>The magnitude of the upward force \(F_N\) exerted by the table on the box</li>
-                            </ul>
+                            </ol>
                         </div>
                     </div>
                     <p>Speaking of rope problems, another concept you'll need to remember is <b>tension</b>, which is the force, \(F_T\), that a cord exerts on an object.</p>
@@ -384,10 +384,10 @@
                         <div class="panel-heading"><h3 class="panel-title">Example problem:</h3></div>
                         <div class="panel-body">
                             <p>Two boxes are connected by a lightweight cord and are resting on a frictionless table. The boxes have masses of 12.0 kilograms and 10.0 kilograms. A horizontal force, \(F_P\), of 40.0 N is applied to the 10.0 kilogram box. Determine the following:</p>
-                            <ul>
+                            <ol type="a">
                                 <li>The acceleration of the box</li>
                                 <li>The tension in the cord connecting the boxes</li>
-                            </ul>
+                            </ol>
                         </div>
                     </div>
 
@@ -405,11 +405,47 @@
                     <div class="panel panel-info">
                         <div class="panel-heading"><h3 class="panel-title">Example problem:</h3></div>
                         <div class="panel-body">
-                            <p>A 10 kilogram box rests on a horizontal floor. The coefficient of static friction is \({\mu}_s = 0.40\) and the coefficient of kinetic friction is \({\mu}_k = 0.30\)</p>
-                            <ul>
-                                <li>The acceleration of the box</li>
-                                <li>The tension in the cord connecting the boxes</li>
-                            </ul>
+                            <p>A 10 kilogram box rests on a horizontal floor. The coefficient of static friction is \({\mu}_s = 0.40\) and the coefficient of kinetic friction is \({\mu}_k = 0.30\). Determine the force of the friction, \(F_{fr}\), acting on the box if a horizontal external applied force \(F_A\) is exerted on it for the following magnitudes:</p>
+                            <ol type="a">
+                                <li>0</li>
+                                <li>10 N</li>
+                                <li>20 N</li>
+                                <li>38 N</li>
+                                <li>40 N</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="panel panel-success">
+                        <div class="panel-heading"><h3 class="panel-title">Solving example:</h3></div>
+                        <div class="panel-body">
+                            <img src="img/pulleyProblem1.png" class="img-responsive pull-left" style="max-width: 200px;">
+                            <p>Two boxes, \(A\) (5.0 kilograms) and \(B\) (2.0 kilograms), shown in the figure here, are connected by a cord running over a pulley. Box \(A\) is placed on a flat, level table and box \(B\) is left hanging off the side of the table. The coefficient of kinetic friction between box \(A\) and the table is \(0.20\). Ignoring the mass of the cord and the pulley and any friction in the pulley, what is the acceleration \(a\) of the system?</p>
+                            <hr>
+                            <img src="img/pulleyProblem1FreebodyDiagrams.png" class="img-responsive pull-right" style="max-width: 200px;">
+                            <p>To solve this problem, we'll draw a free-body diagram for each of the boxes, as shown in the  second figure. We also know that the horizontal accleration of box \(A\) must be equal to the vertical accleration of box \(B\). More on that later.</p>
+                            <p>We know that box \(A\) doesn't move vertically, so Newton's second law tells us the normal force is equal to the weight:</p>
+                            <div class="equation-block">$$F_{\mathrm{N}} = m_{\mathrm{A}}g = (5.0\ \mathrm{kg})(9.8\ \mathrm{m/s^2}) = 49\ \mathrm{N}$$</div>
+                            <p>In the horizontal direction, there are two forces on box \(A\): \(F_{\mathrm{T}}\), the tension in the cord (which we don't know yet), and the force of friction, \(F_{\mathrm{fr}}\). We'll start by solving for \(F_{\mathrm{fr}}\):</p>
+                            <div class="equation-block">$$F_{\mathrm{fr}} = \mu_{\mathrm{k}}F_{\mathrm{N}} = (0.20)(49\ \mathrm{N}) = 9.8\ \mathrm{N}$$</div>
+                            <p>We want to solve for the horizontal acceleration of box A, so let's set up a force equation that will let us do that:</p>
+                            <div class="equation-block">$$\sum F_{\mathrm{Ax}} = F_{\mathrm{T}} - F_{\mathrm{fr}} = m_{\mathrm{A}}a$$</div>
+                            <p>Now, let's consider box B. Let's solve for \(m_{\mathrm{B}}g\):</p>
+                            <div class="equation-block">$$m_{\mathrm{B}}g = (2.0\ \mathrm{kg})(9.8\ \mathrm{m/s^2}) = 19.6\ \mathrm{N}$$</div>
+                            <p>Since we want to solve for the vertical accleration of box \(B\), let's setup our force equation:</p>
+                            <div class="equation-block">$$\sum F_{\mathrm{Bx}} = m_{\mathrm{B}}g - F_{\mathrm{T}} = m_{\mathrm{B}}a$$</div>
+                            <p>Using our box \(A\) equation from earlier, we can solve for \(F_{\mathrm{T}}\) and substitute into our box \(B\) equation:</p>
+                            <div class="equation-block">$$F_{\mathrm{T}} = m_{\mathrm{A}}a + F_{\mathrm{fr}}$$</div>
+                            <div class="equation-block">$$m_{\mathrm{B}}g - m_{\mathrm{A}}a - F_{\mathrm{fr}} = m_{\mathrm{B}}a$$</div>
+                            <p>We can now solve for \(a\) and plug in our values:</p>
+                            <div class="equation-block">\begin{align} m_{\mathrm{B}}g - m_{\mathrm{A}}a - F_{\mathrm{fr}} & = m_{\mathrm{B}}a \\ m_{\mathrm{B}}a + m_{\mathrm{A}}a & = m_{\mathrm{B}}g - F_{\mathrm{fr}} \\ a & = {m_{\mathrm{B}}g - F_{\mathrm{fr}} \over m_{\mathrm{B}} + m_{\mathrm{A}}} \\ a & = {19.6\ \mathrm{N} - 9.8\ \mathrm{N} \over 5.0\ \mathrm{kg} + 2.0\ \mathrm{kg}} \approx 1.4\ \mathrm{m/s^2} \end{align}</div>
+                            <p>The acceleration of the two boxes is <b>1.4 m/s<sup>2</sup></b>, with box \(A\) accelerating towards the right and box \(B\) acclerating towards the ground.</p>
+                        </div>
+                    </div>
+                    <div class="panel panel-info">
+                        <div class="panel-heading"><h3 class="panel-title">Example problem:</h3></div>
+                        <div class="panel-body">
+                            <img src="img/pulleyProblem2.png" class="img-responsive pull-right" style="max-width: 200px;">
+                            <p>Two boxes, \(A\) and \(B\), shown in the figure here, are connected by a cord running over a pulley. Box \(A\) weighs 100 kilograms and placed on a ramp inclined at 30&deg;. The coefficient of static friction between box \(A\) and the ramp is 0.30. Determine the minimum weight of box \(B\) require to prevent box \(A\) from sliding down on the ramp.</p>
                         </div>
                     </div>
                     <hr>

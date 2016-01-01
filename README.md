@@ -1,5 +1,5 @@
 # Physics Midyear Study Guide 2016
-<img width="220" height="220" align="right" src="https://raw.githubusercontent.com/ZacharyEspiritu/physics-midyear/gh-pages/img/icon.png" />
+<img width="195" height="195" align="right" src="https://raw.githubusercontent.com/ZacharyEspiritu/physics-midyear/gh-pages/img/icon.png" />
 An online study guide for Regis High School's Physics Midyear Exam on January 6, 2016. 
 
 I'm mainly using this as an opportunity to kill three birds in one stone:
